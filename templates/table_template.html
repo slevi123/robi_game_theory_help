@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>{{table.name()}}</title>
+<!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+<link rel="stylesheet" href="../style.css">
+<body>
+
+<h1>Table: {{table.main_hand}}</h1>
+<h2>Mesh count: {{table.mesh_count}}</h2>
+
+<p class="sample min">main min </p>
+<p class="sample max">other min </p>
+<p class="sample mesh">mesh</p>
+
+<div class="value_grid">
+    {% for main in table.main_perms %}
+    <div class="value-row">
+        {% for other in table.other_perms %}
+            <p class="value {{ table.specifier(main, other) }}" title="main: {{ main }} &#013;other: {{ other }}">{{table.score_table[(main, other)]}}</p>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>

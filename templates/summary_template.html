@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>All tables</title>
+<!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+<link rel="stylesheet" href="./style.css">
+<body>
+
+    <table>
+        <tr>
+            <th>Table Combination</th>
+            <th>Mesh</th>
+            <th>Min</th>
+            <th>Max</th>
+        </tr>
+        {% for table_name in table_names %}
+            <tr>
+                <td><a href="./tables/table{{table_name}}.html">{{table_name}}</a></td>
+                <td>{{mesh_counts[table_name]}}</td>
+                <td>{{min_counts[table_name]}}</td>
+                <td>{{max_counts[table_name]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+  font-family: Sans-Serif;
+}
+
+.value {
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    text-align: center;
+
+    background: beige;
+    margin: 0;
+
+    border: 1px solid black;
+    display: inline-block;
+}
+
+p.min {
+    background: lightskyblue;
+}
+
+p.max {
+    background: lightpink;
+}
+
+p.mesh {
+    background: lightgreen;
+}
+
+.value-row {
+    display: table;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    margin-top: -0.25em;
+}
+/*--------------*/
+.sample {
+    height: 13px;
+    width: 80px;
+    line-height: 13px;
+    text-align: center;
+
+    background: beige;
+    border: 1px solid black;
+    display: inline-block;
+
+    margin: 0 0 10px;
+}
+
+table {
+  width: 100%;
+}
